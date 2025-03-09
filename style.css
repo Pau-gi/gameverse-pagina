@@ -503,18 +503,19 @@ main {
 .copyright {
     color: var(--morado-oscuro);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.5rem; 
 }
 
 .legal-links {
     color: var(--morado-oscuro);
-    font-size: 1.2rem;
+    font-size: 1.5rem; 
 }
 
 .legal-link {
     color: var(--morado-oscuro);
     text-decoration: none;
     transition: color 0.3s ease, text-decoration 0.3s ease;
+    font-size: 1.5rem; 
 }
 
 .legal-link:hover {
