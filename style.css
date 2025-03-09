@@ -203,6 +203,7 @@ main {
     position: relative;
     margin-top: -1px; 
     overflow: visible;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .services-subtitle {
@@ -287,6 +288,7 @@ main {
     background-color: var(--morado-oscuro);
     border-radius: 50%;
     z-index: 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .circle-left {
@@ -298,6 +300,124 @@ main {
     right: -140px; 
     top: 400px;
 }
+
+/* Sección de contacto (fondo morado) */
+.contact-section-container {
+    position: relative;
+    margin-top: 4rem;
+    padding: 3rem 0 4rem;
+    background-color: var(--morado-oscuro);
+    background-image: linear-gradient(rgba(82, 48, 90, 0.8), rgba(82, 48, 90, 0.8)), url('img/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-header {
+    color: var(--morado-claro);
+    font-size: 1.8rem;
+    margin: 0;
+    text-align: left;
+}
+
+.contact-title {
+    font-family: 'Climate Crisis', sans-serif;
+    font-size: 4rem;
+    color: var(--verde-neon);
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.contact-subtitle {
+    font-family: 'Climate Crisis', sans-serif;
+    font-size: 4rem;
+    color: var(--verde-neon);
+    margin-top: 0;
+    text-align: left;
+}
+
+.contact-card {
+    background-color: rgba(82, 48, 90, 0.8);
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid var(--morado-claro);
+}
+
+.chat-icon {
+    background-color: var(--morado-oscuro);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+
+.chat-image {
+    width: 50px;
+    height: 50px;
+}
+
+.contact-info {
+    color: var(--amarillo);
+}
+
+.contact-card-title {
+    font-size: 1.8rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.contact-number {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.footer {
+    background-color: var(--amarillo);
+    padding: 1.5rem 0;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.footer-legal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-small {
+    height: 40px;
+}
+
+.copyright {
+    color: var(--morado-oscuro);
+    font-weight: bold;
+}
+
+.legal-links {
+    color: var(--morado-oscuro);
+}
+
+.legal-link {
+    color: var(--morado-oscuro);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.legal-link:hover {
+    color: var(--morado-claro);
+    text-decoration: underline;
+}
+
 
 @media (max-width: 768px) {
     .service-item {
@@ -328,5 +448,26 @@ main {
     .game-card {
         width: 100%;
         margin-bottom: 1rem;
+        .contact-content {
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .contact-text {
+            margin-bottom: 2rem;
+        }
+        
+        .contact-header, .contact-title, .contact-subtitle {
+            text-align: center;
+        }
+        
+        .contact-title, .contact-subtitle {
+            font-size: 2.5rem;
+        }
+        
+        .footer-legal {
+            flex-direction: column;
+            gap: 1rem;
+        }
     }
 }
