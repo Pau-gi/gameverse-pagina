@@ -197,8 +197,130 @@ main {
     background-color: var(--morado-claro);
 }
 
+.services-section {
+    background-color: var(--amarillo);
+    padding: 4rem 0 6rem;
+    position: relative;
+    margin-top: -1px; 
+    overflow: visible;
+}
+
+.services-subtitle {
+    color: var(--morado-claro);
+    font-size: 1.8rem;
+    margin: 0;
+    text-align: left;
+}
+
+.services-title {
+    font-family: 'Climate Crisis', sans-serif;
+    font-size: 3.5rem;
+    color: var(--morado-oscuro);
+    margin-top: 0;
+    margin-bottom: 4rem;
+    text-align: left;
+}
+
+.services-path {
+    position: relative;
+    min-height: 450px;
+}
+
+.service-item {
+    position: absolute;
+    width: 40%;
+    z-index: 2; 
+}
+
+.service-name {
+    color: var(--morado-oscuro);
+    font-size: 2rem;
+    position: relative;
+    display: inline-block;
+    border-bottom: 2px solid var(--morado-oscuro);
+    padding-bottom: 5px;
+}
+
+.service-1 {
+    top: 0;
+    left: 0;
+    text-align: left;
+}
+
+.service-2 {
+    top: 100px;
+    right: 0;
+    text-align: right;
+}
+
+.service-3 {
+    top: 200px;
+    left: 0;
+    text-align: left;
+}
+
+.service-4 {
+    top: 300px;
+    right: 0;
+    text-align: right;
+}
+
+.service-5 {
+    top: 400px;
+    left: 0;
+    text-align: left;
+}
+
+.zigzag-path {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.circle-decoration {
+    position: absolute;
+    width: 350px; 
+    height: 350px;
+    background-color: var(--morado-oscuro);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.circle-left {
+    left: -140px; 
+    top: 50px;
+}
+
+.circle-right {
+    right: -140px; 
+    top: 400px;
+}
 
 @media (max-width: 768px) {
+    .service-item {
+        width: 100%;
+        position: relative;
+        margin-bottom: 2rem;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        text-align: left;
+    }
+    
+    .zigzag-path {
+        display: none;
+    }
+    
+    .circle-decoration {
+        display: none;
+    }
+    
+    .services-title {
+        font-size: 2.5rem;
+    }
     .games-container {
         flex-direction: column;
     }
