@@ -132,7 +132,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 4rem; 
     margin-top: 2rem;
     padding: 0 1rem;
 }
@@ -590,12 +590,14 @@ main {
         display: none;
     }
     
-    .sponsors {
-        gap: 1rem;
-    }
-    
-    .sponsor-logo {
-        height: 30px;
+    @media (max-width: 768px) {
+        .sponsors {
+            gap: 2.5rem;
+        }
+        
+        .sponsor-logo {
+            height: 30px;
+        }
     }
     
     .contact-content {
