@@ -88,9 +88,6 @@ main {
     color: var(--morado-oscuro);
 }
 
-footer {
-    padding: 2rem 0;
-}
 
 .sponsors {
     display: flex;
@@ -104,4 +101,110 @@ footer {
 .sponsor-logo {
     height: 40px;
     opacity: 0.9;
+}
+
+.games-section {
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+}
+
+.section-title {
+    font-size: 1.4rem;
+    color: var(--morado-claro);
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.featured-title {
+    font-family: 'Climate Crisis', sans-serif;
+    font-size: 3.5rem;
+    color: var(--verde-neon);
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-transform: none;
+}
+
+.games-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.game-card {
+    background-color: rgba(244, 223, 182, 0.9);
+    border-radius: 16px;
+    overflow: hidden;
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.game-info {
+    padding: 0.5rem 1rem 1rem;
+    position: relative;
+}
+
+.game-title {
+    color: var(--morado-oscuro);
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.rating {
+    margin: 0.5rem 0;
+}
+
+.star {
+    color: goldenrod;
+    font-size: 1.2rem;
+}
+
+.price {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    color: var(--morado-oscuro);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.active {
+    background-color: var(--morado-claro);
+}
+
+
+@media (max-width: 768px) {
+    .games-container {
+        flex-direction: column;
+    }
+    
+    .game-card {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }
