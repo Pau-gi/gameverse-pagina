@@ -280,14 +280,14 @@ main {
 
 .services-subtitle {
     color: var(--morado-claro);
-    font-size: 1.8rem;
+    font-size: 2.2rem; 
     margin: 0;
     text-align: left;
 }
 
 .services-title {
     font-family: 'Climate Crisis', sans-serif;
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: var(--morado-oscuro);
     margin-top: 0;
     margin-bottom: 4rem;
@@ -307,7 +307,7 @@ main {
 
 .service-name {
     color: var(--morado-oscuro);
-    font-size: 2rem;
+    font-size: 2.5rem; 
     position: relative;
     display: inline-block;
     border-bottom: 2px solid var(--morado-oscuro);
@@ -537,7 +537,7 @@ main {
     }
     
     .featured-title, .services-title {
-        font-size: 2.8rem;
+        font-size: 3.2rem; 
     }
     
     .game-card {
@@ -579,7 +579,7 @@ main {
     }
     
     .service-name {
-        font-size: 1.8rem;
+        font-size: 2.2rem; 
     }
     
     .zigzag-path {
@@ -590,14 +590,12 @@ main {
         display: none;
     }
     
-    @media (max-width: 768px) {
-        .sponsors {
-            gap: 2.5rem;
-        }
-        
-        .sponsor-logo {
-            height: 30px;
-        }
+    .sponsors {
+        gap: 2.5rem; 
+    }
+    
+    .sponsor-logo {
+        height: 30px;
     }
     
     .contact-content {
@@ -628,11 +626,11 @@ main {
     }
     
     .featured-title, .services-title {
-        font-size: 2.2rem;
+        font-size: 2.6rem; 
     }
     
     .services-subtitle {
-        font-size: 1.5rem;
+        font-size: 1.8rem; 
     }
     
     .game-card {
